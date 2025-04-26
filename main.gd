@@ -1,9 +1,9 @@
 extends Node2D
 
-@onready var moon: AnimatedSprite2D = $moon
+@onready var star: AnimatedSprite2D = $star
 
-# State for the moon character
-var moon_state = {
+# State for the star character
+var star_state = {
 	"is_facing_right": true,
 	"velocity": Vector2.ZERO
 }
@@ -14,7 +14,7 @@ func _ready():
 	pass
 
 func _process(delta):
-	control_character(moon, delta, moon_state)
+	control_character(star, delta, star_state)
 
 func control_character(sprite: AnimatedSprite2D, delta: float, state: Dictionary):
 	# Reset velocity

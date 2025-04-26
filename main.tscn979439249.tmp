@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://dsoqkbnqoc2us"]
+[gd_scene load_steps=37 format=3 uid="uid://dsoqkbnqoc2us"]
 
 [ext_resource type="Script" uid="uid://cij7iuu3r6e2k" path="res://main.gd" id="1_5vw27"]
 [ext_resource type="Texture2D" uid="uid://dibrlqib8a7qv" path="res://animation.png" id="2_0xm2m"]
@@ -19,22 +19,6 @@ region = Rect2(476, 0, 238, 171)
 [sub_resource type="AtlasTexture" id="AtlasTexture_7mycd"]
 atlas = ExtResource("2_0xm2m")
 region = Rect2(714, 0, 238, 171)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4k2k6"]
-atlas = ExtResource("3_h2yge")
-region = Rect2(0, 0, 238, 166)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0rl1p"]
-atlas = ExtResource("3_h2yge")
-region = Rect2(238, 0, 238, 166)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ok6jj"]
-atlas = ExtResource("3_h2yge")
-region = Rect2(476, 0, 238, 166)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_facbu"]
-atlas = ExtResource("3_h2yge")
-region = Rect2(714, 0, 238, 166)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0xm2m"]
 atlas = ExtResource("2_0xm2m")
@@ -162,18 +146,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_7mycd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4k2k6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0rl1p")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ok6jj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_facbu")
 }],
 "loop": true,
 "name": &"idle",
@@ -296,6 +268,6 @@ script = ExtResource("1_5vw27")
 texture_filter = 1
 scale = Vector2(0.495, 0.495)
 sprite_frames = SubResource("SpriteFrames_qsp4k")
-animation = &"walk-up"
+animation = &"walk-down"
 
 [node name="Camera2D" type="Camera2D" parent="."]
